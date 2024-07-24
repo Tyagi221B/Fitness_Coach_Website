@@ -1,94 +1,188 @@
 function Footer() {
 	return (
-		<footer className="bg-black text-gray-400 py-12">
-			<div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-4 sm:px-6 lg:px-8">
-				<div>
-					<h2 className="text-white text-lg font-semibold mb-4">About Us</h2>
-					<p className="mb-4">
-						We&rsquo;re not about cookie-cutter fitness plans. At Shyam Classes
-						Fitness, we believe in personalized coaching that unlocks your full
-						potential and empowers you to achieve lasting results. I&rsquo;m
-						Shyam, your certified fitness coach and guide on your journey
-						to a healthier, happier you. My passion lies in helping individuals
-						of all backgrounds and goals discover the joy of movement and create
-						sustainable fitness habits.
-					</p>
-				</div>
-				<div>
-					<h2 className="text-white text-lg font-semibold mb-4">Quick Links</h2>
-					<ul>
-						<li>
-							<a
-								href="#"
-								className="hover:text-white transition-colors duration-300"
+		<div className="w-screen">
+			<ul className="max-w-screen-md mx-auto mt-20 divide-y  shadow shadow-blue-600 rounded-xl">
+				<li>
+					<details className="group">
+						<summary className="flex items-center gap-3 px-4 py-3 font-medium marker:content-none hover:cursor-pointer">
+							<svg
+								className="w-5 h-5 text-gray-500 transition group-open:rotate-90"
+								xmlns="http://www.w3.org/2000/svg"
+								width="16"
+								height="16"
+								fill="currentColor"
+								viewBox="0 0 16 16"
 							>
-								Home
-							</a>
-						</li>
-						<li>
-							<a
-								href="#"
-								className="hover:text-white transition-colors duration-300"
+								<path
+									fill-rule="evenodd"
+									d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+								></path>
+							</svg>
+							<span>What if I don&rsquo;t like it?</span>
+						</summary>
+
+						<article className="px-4 pb-4">
+							<p>
+								We are so sure you are going to love Pait Pro that we will
+								guarantee it! All you have to do is get in and watch one full
+								training. If you don&rsquo;t absolutely love it we will refund
+								your money and you can keep all the resources inside! The only
+								stipulation is this refund must be requested within 15 days of
+								purchase.
+							</p>
+						</article>
+					</details>
+				</li>
+				<li>
+					<details className="group">
+						<summary className="flex items-center gap-3 px-4 py-3 font-medium marker:content-none hover:cursor-pointer">
+							<svg
+								className="w-5 h-5 text-gray-500 transition group-open:rotate-90"
+								xmlns="http://www.w3.org/2000/svg"
+								width="16"
+								height="16"
+								fill="currentColor"
+								viewBox="0 0 16 16"
 							>
-								About
-							</a>
-						</li>
-						<li>
-							<a
-								href="#"
-								className="hover:text-white transition-colors duration-300"
+								<path
+									fill-rule="evenodd"
+									d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+								></path>
+							</svg>
+							<span>How many trainings are there?</span>
+						</summary>
+
+						<article className="px-4 pb-4">
+							<p>
+								Every month there is one core training. This training will
+								dictate much of our community conversation and typically have
+								unique resources attached. We determined that it was more
+								beneficial to offer one mind-blowing training than a bunch of
+								mediocre ones with content you already know. All trainers are
+								vetted, paid well, and given sufficient time and resources to
+								create incredible trainings.
+							</p>
+						</article>
+					</details>
+				</li>
+				<li>
+					<details className="group">
+						<summary className="flex items-center gap-3 px-4 py-3 font-medium marker:content-none hover:cursor-pointer">
+							<svg
+								className="w-5 h-5 text-gray-500 transition group-open:rotate-90"
+								xmlns="http://www.w3.org/2000/svg"
+								width="16"
+								height="16"
+								fill="currentColor"
+								viewBox="0 0 16 16"
 							>
-								Courses
-							</a>
-						</li>
-						<li>
-							<a
-								href="#"
-								className="hover:text-white transition-colors duration-300"
+								<path
+									fill-rule="evenodd"
+									d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+								></path>
+							</svg>
+							<span>What do I get when I join?</span>
+						</summary>
+
+						<article className="px-4 pb-4">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et
+								ipsum sapien. Vestibulum molestie porttitor augue vitae
+								vulputate. Aliquam nec ex maximus, suscipit diam vel, tristique
+								tellus.{" "}
+							</p>
+						</article>
+					</details>
+				</li>
+				<li>
+					<details className="group">
+						<summary className="flex items-center gap-3 px-4 py-3 font-medium marker:content-none hover:cursor-pointer">
+							<svg
+								className="w-5 h-5 text-gray-500 transition group-open:rotate-90"
+								xmlns="http://www.w3.org/2000/svg"
+								width="16"
+								height="16"
+								fill="currentColor"
+								viewBox="0 0 16 16"
 							>
-								Contact
-							</a>
-						</li>
-					</ul>
-				</div>
-				<div>
-					<h2 className="text-white text-lg font-semibold mb-4">Follow Us</h2>
-					<div className="flex space-x-4">
-						<a
-							target="_blank"
-							href="#"
-							className="hover:text-white transition-colors duration-300"
-						>
-							Youtube
-						</a>
-						<a
-							target="_blank"
-							href="#"
-							className="hover:text-white transition-colors duration-300"
-						>
-							X
-						</a>
-						<a
-							href="#"
-							target="_blank"
-							className="hover:text-white transition-colors duration-300"
-						>
-							Instagram
-						</a>
-					</div>
-				</div>
-				<div>
-					<h2 className="text-white text-lg font-semibold mb-4">Contact Us</h2>
-					<p>Haridwar, India</p>
-					<p>Roorkee 247667</p>
-					<p>Email: asmittyagi.dev@gmail.com</p>
-					<p>Phone: (+91) 6396591516</p>
-				</div>
-			</div>
-			<p className="text-center text-xs pt-8">
-				© 2024 Shyam. All rights reserved.
-			</p>
-		</footer>
+								<path
+									fill-rule="evenodd"
+									d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+								></path>
+							</svg>
+							<span>Can I cancel?</span>
+						</summary>
+
+						<article className="px-4 pb-4">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et
+								ipsum sapien. Vestibulum molestie porttitor augue vitae
+								vulputate. Aliquam nec ex maximus, suscipit diam vel, tristique
+								tellus.{" "}
+							</p>
+						</article>
+					</details>
+				</li>
+				<li>
+					<details className="group">
+						<summary className="flex items-center gap-3 px-4 py-3 font-medium marker:content-none hover:cursor-pointer">
+							<svg
+								className="w-5 h-5 text-gray-500 transition group-open:rotate-90"
+								xmlns="http://www.w3.org/2000/svg"
+								width="16"
+								height="16"
+								fill="currentColor"
+								viewBox="0 0 16 16"
+							>
+								<path
+									fill-rule="evenodd"
+									d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+								></path>
+							</svg>
+							<span>Who is this for?</span>
+						</summary>
+
+						<article className="px-4 pb-4">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et
+								ipsum sapien. Vestibulum molestie porttitor augue vitae
+								vulputate. Aliquam nec ex maximus, suscipit diam vel, tristique
+								tellus.{" "}
+							</p>
+						</article>
+					</details>
+				</li>
+				<li>
+					<details className="group">
+						<summary className="flex items-center gap-3 px-4 py-3 font-medium marker:content-none hover:cursor-pointer">
+							<svg
+								className="w-5 h-5 text-gray-500 transition group-open:rotate-90"
+								xmlns="http://www.w3.org/2000/svg"
+								width="16"
+								height="16"
+								fill="currentColor"
+								viewBox="0 0 16 16"
+							>
+								<path
+									fill-rule="evenodd"
+									d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"
+								></path>
+							</svg>
+							<span>How is this different than other courses?</span>
+						</summary>
+
+						<article className="px-4 pb-4">
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et
+								ipsum sapien. Vestibulum molestie porttitor augue vitae
+								vulputate. Aliquam nec ex maximus, suscipit diam vel, tristique
+								tellus.{" "}
+							</p>
+						</article>
+					</details>
+				</li>
+			</ul>
+		</div>
 	);
 }
 

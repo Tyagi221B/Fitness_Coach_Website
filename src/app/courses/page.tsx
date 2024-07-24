@@ -8,10 +8,10 @@ const page = () => {
 	return (
 		<div className="min-h-screen bg-black py-12 pt-36">
 			<h1 className="text-lg md:text-7xl text-center font-sans fonbo' mb-8 text-white">
-				All courses ({courseData.courses.length})
+				All courses ({courseData.programs.length})
 			</h1>
 			<div className="flex flex-wrap justify-center">
-				{courseData.courses.map((course) => (
+				{courseData.programs.map((course) => (
 					<CardContainer 
 					key={course.id}
 					className="inter-var m-4">
@@ -53,7 +53,7 @@ const page = () => {
 									as="button"
 									className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
 								>
-									Sign up
+									Join
 								</CardItem>
 							</div>
 						</CardBody>
