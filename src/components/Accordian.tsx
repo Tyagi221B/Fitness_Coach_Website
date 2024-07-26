@@ -1,4 +1,4 @@
-function Footer() {
+function Accordian() {
 	return (
 		<div className="w-screen">
 			<ul className="max-w-screen-md mx-auto mt-20 divide-y  shadow shadow-blue-600 rounded-xl">
@@ -186,4 +186,4 @@ function Footer() {
 	);
 }
 
-export default Footer;
+export default Accordian;

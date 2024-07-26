@@ -1,13 +1,27 @@
-import NextVideo from "next-video"
-import sample from "../../videos/sample.mp4"
-import motivation from "../../videos/motivation_1.mp4"
-
+import Link from "next/link"
+import { Button } from "./ui/moving-border"
 
 const FirstVideo = () => {
   return (
-    <div className="w-full flex justify-center items-center md:py-24 py-5 ">
-      <NextVideo className="md:max-w-screen-md w-full px-6 shadow-[0_2px_800px_rgba(0,_1,_255,_0.3)]" src={motivation}/>
-      <h1 className="text-[rgb(0,1,255)] font-extrabold"></h1>
+    <div className="w-full flex flex-col justify-center items-center md:py-12 py-5 rounded-full gap-8">
+      <iframe 
+      id="titleVideo"
+      className="rounded-2xl shadow-violet-800 " 
+      width="906" 
+      height="511" 
+      src="https://www.youtube.com/embed/s0pFc2DK1z0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>
+      <div className="mt-4 md:py-16">
+					<Link href={"/courses"}>
+						<Button
+							duration={500}
+							borderClassName="bg-red-800 bg-yellow-400 bg-orange-400"
+							borderRadius="1.75rem"
+							className="bg-white  dark:bg-black text-black dark:text-yellow-300 border-neutral-200 dark:border-slate-800 md:text-xl"
+						>
+							Join The Tribe -&gt;
+						</Button>
+					</Link>
+				</div>
     </div>
   )
 }
