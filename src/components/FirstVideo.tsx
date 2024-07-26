@@ -6,10 +6,11 @@ const FirstVideo = () => {
     <div className="w-full flex flex-col justify-center items-center md:py-12 py-5 rounded-full gap-8">
       <iframe 
       id="titleVideo"
-      className="rounded-2xl shadow-violet-800 " 
+      className="rounded-2xl" 
       width="906" 
       height="511" 
-      src="https://www.youtube.com/embed/s0pFc2DK1z0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>
+      src="https://www.youtube.com/embed/dQw4w9WgXcQ" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>
+
       <div className="mt-4 md:py-16">
 					<Link href={"/courses"}>
 						<Button

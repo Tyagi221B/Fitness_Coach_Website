@@ -1,9 +1,3 @@
-import NextVideo from "next-video";
-import sample from "../../videos/sample.mp4";
-import testimonailOne from "../../videos/Testimonial_1.mp4"
-import testimonailTwo from "../../videos/Testimonail2.mp4"
-import testimonailThree from "../../videos/Testimonial3.mp4"
-
 
 const TestimonailVideo = () => {
 	return (
@@ -20,18 +14,18 @@ const TestimonailVideo = () => {
 			<div className="video-container flex flex-col">
 				<div className="row-1 md:flex md:flex-row md:gap-8 flex flex-col gap-8 py-8">
 					<div className="col-1">
-						<NextVideo className="w-24" src={testimonailOne} />
+						{/* <NextVideo className="w-24" src={testimonailOne} /> */}
 					</div>
 					<div className="col-2">
-						<NextVideo className="w-24" src={testimonailTwo} />
+						{/* <NextVideo className="w-24" src={testimonailTwo} /> */}
 					</div>
 				</div>
 				<div className="row-2 md:flex md:flex-row md:gap-8 flex flex-col gap-8 py-8">
 					<div className="col-1">
-						<NextVideo className="w-24" src={testimonailThree} />
+						{/* <NextVideo className="w-24" src={testimonailThree} /> */}
 					</div>
 					<div className="col-2">
-						<NextVideo className="w-24" src={testimonailOne} />
+						{/* <NextVideo className="w-24" src={testimonailOne} /> */}
 					</div>
 				</div>
 			</div>
