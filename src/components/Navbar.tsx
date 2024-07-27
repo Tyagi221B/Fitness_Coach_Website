@@ -1,12 +1,9 @@
-"use client";
-import Image from 'next/image';
+import React from 'react'
 
-const Navbar = ({ className }: { className?: string }) => {
+const Navbar = () => {
 	return (
-		<div>
-		
-		</div>
-	);
-};
+		<div></div>
+	)
+}
 
-export default Navbar;
+export default Navbar

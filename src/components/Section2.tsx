@@ -5,7 +5,7 @@ const Section2 = () => {
 	return (
 		<div className="h-full">
 			<div className="">
-				<h1 className="md:mt-0 lg:text-4xl md:text-2xl md:font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 lg:mt-12 mt-8 text-center">
+				<h1 className="md:mt-0 lg:text-5xl md:text-2xl md:font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 lg:mt-12 mt-8 text-center">
 					Has This Happened To You Before?
 				</h1>
 			</div>
@@ -36,7 +36,7 @@ const Section2 = () => {
 				</section>
 
         <div className="">
-				<h1 className="md:mt-0 lg:text-4xl md:text-2xl md:font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 lg:mt-12 mt-8 text-center">
+				<h1 className="md:mt-0 lg:text-5xl md:text-2xl md:font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 lg:mt-12 mt-8 text-center">
 					But, Ended up with
 				</h1>
 			</div>

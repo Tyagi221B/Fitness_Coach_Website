@@ -6,7 +6,7 @@ const HeroSection = () => {
 	const words =
 		"Get Ripped, Stay Sharp, And Party Hard In 12 Weeks- No Sacrifices, Just Results!";
 	return (
-		<div className="h-auto lg:h-full md:h-[40rem] w-full rounded-md flex flex-col items-center justify-center relative overflow-hidden mx-auto md:pt-10 md:pb-4 py-6">
+		<div className="h-auto lg:h-full md:h-[40rem] w-full rounded-md flex flex-col items-center justify-center relative overflow-hidden mx-auto md:pt-4 md:pb-4 py-6">
 			<div className="md:p-4 relative z-10 w-full text-center flex flex-col h-full justify-center items-center px-8">
 				<div className="w-full flex flex-col justify-center items-center md:mt-12" >
 					<Image

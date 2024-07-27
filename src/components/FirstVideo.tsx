@@ -3,7 +3,7 @@ import { Button } from "./ui/moving-border"
 
 const FirstVideo = () => {
   return (
-    <div className="w-full flex flex-col justify-center items-center md:py-12 py-5 rounded-full gap-8">
+    <div className="w-full flex flex-col justify-center items-center md:pt-12 py-5 rounded-full gap-8">
       <iframe 
       id="titleVideo"
       className="rounded-2xl" 
