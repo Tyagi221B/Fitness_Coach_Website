@@ -57,7 +57,7 @@ const UserInfoSection = () => {
 					placeholder="phone"
 				/>
 				<Button
-					duration={500}
+					duration={1000}
 					onClick={onSignup}
                     disabled={buttonDisabled || loading}
                     loading={loading}
