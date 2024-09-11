@@ -65,7 +65,7 @@ const UserInfoSection = () => {
 					borderRadius="1.75rem"
 					className="bg-white  dark:bg-black text-black dark:text-yellow-300 border-neutral-200 dark:border-slate-800 md:text-xl"
 				>
-					Send -&gt;
+					{loading ? "...." : "Send"} -&gt;
 				</Button>
 			</div>
 		</div>

@@ -1,6 +1,5 @@
 import {connect} from "@/dbConfig/dbConfig";
 import userInfo from "@/models/userInfo.model";
-import { error } from "console";
 import { NextRequest, NextResponse } from "next/server";
 
 connect()
@@ -17,8 +16,11 @@ export async function POST(request: NextRequest){
         if(userEmail){
             return NextResponse.json({error: "Your email is already registered with us, Please Enter New Email"}, {status: 400})
         }
-        if(userPhone){
+        else if(userPhone){
             return NextResponse.json({error: "Your Phone is already registered with us, Please give another Phone Number"}, {status: 400})
+        }
+        else {
+            return NextResponse.json({error: "Check if the info is correct, If you are still facing the issue call 911"}, {status: 400})
         }
 
         const newUser = new userInfo({
