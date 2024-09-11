@@ -1,7 +1,6 @@
 import React from "react";
 
 const Section2 = () => {
-	const words = "Has This Happened To You Before?";
 	return (
 		<div className="h-full">
 			<div className="">
