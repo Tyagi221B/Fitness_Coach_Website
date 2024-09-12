@@ -8,7 +8,6 @@ import { Input } from "./ui/input";
 const UserInfoSection = () => {
 	const [user, setUser] = React.useState({
 		email: "",
-		phone: "",
 	});
 	const [buttonDisabled, setButtonDisabled] = React.useState(false);
 	const [loading, setLoading] = React.useState(false);
@@ -28,7 +27,7 @@ const UserInfoSection = () => {
 	};
 
 	useEffect(() => {
-		if (user.email.length > 0 && user.phone.length >= 10) {
+		if (user.email.length > 0 ) {
 			setButtonDisabled(false);
 		} else {
 			setButtonDisabled(true);
@@ -38,25 +37,17 @@ const UserInfoSection = () => {
 	return (
 		<div className="flex flex-col items-center justify-center h-full py-12 gap-6">
 			<h1 className="md:mt-0 lg:text-2xl md:text-2xl md:font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 lg:mt-12 mt-8">
-			{loading ? "Saving Your Information" : "Send Your Info To Us"}
+			{loading ? "Saving Your Information" : "Send Your Info To Us, And We Will Connect To You Soon."}
 				</h1>
 			<hr />
-			<div className="flex flex-row gap-10">
+			<div className="flex flex-col gap-10 justify-center items-center">
 				<Input
-					className="p-2 border border-gray-300 rounded-lg mb-4 focus:outline-none focus:border-gray-600 text-black"
+					className="p-6 text-center border border-gray-300 rounded-lg mb-4 focus:outline-none text-xl focus:border-gray-600 text-black"
 					id="email"
 					type="text"
 					value={user.email}
 					onChange={(e) => setUser({ ...user, email: e.target.value })}
 					placeholder="email"
-				/>
-				<Input
-					className="p-2 border border-gray-300 rounded-lg mb-4 focus:outline-none focus:border-gray-600 text-black"
-					id="phone"
-					type="tel"
-					value={user.phone}
-					onChange={(e) => setUser({ ...user, phone: e.target.value })}
-					placeholder="phone"
 				/>
 				<Button
 					duration={1000}
@@ -70,6 +61,20 @@ const UserInfoSection = () => {
 					{loading ? "...." : "Submit"} -&gt;
 				</Button>
 			</div>
+
+			<h1 className="md:mt-0 lg:text-4xl md:text-2xl md:font-extrabold bg-clip-text text-transparent bg-gradient-to-b from-white to-[#c0b9ff] lg:mt-32 mt-6">
+			{loading ? "Saving Your Information" : "This is the heading that will be displayed like this "}
+				</h1>
+				<div className="mt-16">
+				<Button
+					duration={9000}
+					className="bg-white  dark:bg-black text-black dark:text-white border-neutral-200 dark:border-slate-800 md:text-xl "
+				>
+					{loading ? "...." : "Button"}
+				</Button>
+
+				</div>
+				
 		</div>
 	);
 };

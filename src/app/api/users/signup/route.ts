@@ -7,22 +7,18 @@ connect()
 export async function POST(request: NextRequest){
     try {
         const reqBody = await request.json()
-        const {email, phone} = reqBody
+        const {email} = reqBody
         console.log(reqBody);
 
         const userEmail = await userInfo.findOne({email})
-        const userPhone = await userInfo.findOne({phone})
 
         if(userEmail){
             return NextResponse.json({error: "Your email is already registered with us, Please Enter New Email"}, {status: 400})
         }
-        if(userPhone){
-            return NextResponse.json({error: "Your Phone is already registered with us, Please give another Phone Number"}, {status: 400})
-        }
+        
 
         const newUser = new userInfo({
-            email,
-            phone
+            email
         })
 
         const savedUser = await newUser.save()
@@ -34,9 +30,6 @@ export async function POST(request: NextRequest){
             savedUser
         })
         
-        
-
-
     } catch (error: any) {
         return NextResponse.json({error: error.message}, {status: 500})
 
