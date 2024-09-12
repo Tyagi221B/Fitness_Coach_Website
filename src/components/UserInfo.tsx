@@ -13,18 +13,22 @@ const UserInfoSection = () => {
 	const [loading, setLoading] = React.useState(false);
 
 	const onSignup = async () => {
-		try {
-			setLoading(true);
-			const response = await axios.post("/api/users/signup", user);
-			console.log("Signup success", response.data);
-			toast.success(response.data.message);
-		} catch (error: any) {
-			console.log("Signup failed", error.response?.data?.error || error.message);
-        toast.error(error.response?.data?.error || "An unexpected error occurred.");
-		} finally {
-			setLoading(false);
-		}
-	};
+    if (loading) return; 
+    try {
+      setLoading(true);
+      const response = await axios.post("/api/users/signup", user);
+      console.log("Signup success", response.data);
+      toast.success(response.data.message);
+      setUser({ email: "" });
+    } catch (error: any) {
+      console.log("Signup failed", error.response?.data?.error || error.message);
+      toast.error(
+        error.response?.data?.error || "An unexpected error occurred."
+      );
+    } finally {
+      setLoading(false);
+    }
+  };
 
 	useEffect(() => {
 		if (user.email.length > 0 ) {
@@ -40,9 +44,9 @@ const UserInfoSection = () => {
 			{loading ? "Saving Your Information" : "Send Your Info To Us, And We Will Connect To You Soon."}
 				</h1>
 			<hr />
-			<div className="flex flex-col gap-10 justify-center items-center">
+			<div className="flex flex-row gap-10 justify-center items-center h-28 ">
 				<Input
-					className="p-6 text-center border border-gray-300 rounded-lg mb-4 focus:outline-none text-xl focus:border-gray-600 text-black"
+					className="p-6 text-center border border-gray-300 rounded-lg focus:outline-none text-xl focus:border-gray-600 text-black"
 					id="email"
 					type="text"
 					value={user.email}
@@ -56,9 +60,9 @@ const UserInfoSection = () => {
                     loading={loading}
 					borderClassName="bg-red-800 bg-yellow-400 bg-orange-400"
 					borderRadius="1.75rem"
-					className="bg-white  dark:bg-black text-black dark:text-yellow-300 border-neutral-200 dark:border-slate-800 md:text-xl"
+					className="bg-white  dark:bg-black text-black dark:text-yellow-300 border-neutral-200 dark:border-slate-800 lg:text-xl"
 				>
-					{loading ? "...." : "Submit"} -&gt;
+					{loading ?  <span className="text-green-300 text-xs">Saving ...</span> : <span className="">Submit -&gt;</span>} 
 				</Button>
 			</div>
 
