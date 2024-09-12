@@ -12,6 +12,7 @@ const FirstVideo = () => {
 					// height="511"
 					src="https://www.youtube.com/embed/dQw4w9WgXcQ"
 					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowFullScreen
 				></iframe>
 				{/* <div
 					className="absolute top-0 left-0 w-full h-full"
