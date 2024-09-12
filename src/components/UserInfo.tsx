@@ -44,7 +44,7 @@ const UserInfoSection = () => {
 			{loading ? "Saving Your Information" : "Send Your Info To Us, And We Will Connect To You Soon."}
 				</h1>
 			<hr />
-			<div className="flex flex-row gap-10 justify-center items-center md:h-28 h-full">
+			<div className="flex flex-row md:gap-10 gap-3 justify-center items-center md:h-28 h-full">
 				<Input
 					className="p-6 text-center border border-gray-300 rounded-lg focus:outline-none text-xl focus:border-gray-600 text-black"
 					id="email"
