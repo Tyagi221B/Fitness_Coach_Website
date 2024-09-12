@@ -13,10 +13,10 @@ const FirstVideo = () => {
 					src="https://www.youtube.com/embed/dQw4w9WgXcQ"
 					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 				></iframe>
-				<div
+				{/* <div
 					className="absolute top-0 left-0 w-full h-full"
 					style={{ cursor: "pointer", backgroundColor: "transparent" }}
-				></div>
+				></div> */}
 			</div>
 		</div>
 	);
