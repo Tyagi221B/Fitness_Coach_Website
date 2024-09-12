@@ -39,12 +39,12 @@ const UserInfoSection = () => {
 	}, [user]);
 
 	return (
-		<div className="flex flex-col items-center justify-center h-full py-12 gap-6">
-			<h1 className="md:mt-0 lg:text-2xl md:text-2xl md:font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 lg:mt-12 mt-8">
+		<div className="flex flex-col items-center justify-center h-full md:py-12 gap-6 mx-16 mt-6 mb-16">
+			<h1 className="md:mt-0 lg:text-2xl md:text-2xl md:font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 lg:mt-12 mt-8 text-center">
 			{loading ? "Saving Your Information" : "Send Your Info To Us, And We Will Connect To You Soon."}
 				</h1>
 			<hr />
-			<div className="flex flex-row gap-10 justify-center items-center h-28 ">
+			<div className="flex flex-row gap-10 justify-center items-center md:h-28 h-full">
 				<Input
 					className="p-6 text-center border border-gray-300 rounded-lg focus:outline-none text-xl focus:border-gray-600 text-black"
 					id="email"
@@ -66,10 +66,10 @@ const UserInfoSection = () => {
 				</Button>
 			</div>
 
-			<h1 className="md:mt-0 lg:text-4xl md:text-2xl md:font-extrabold bg-clip-text text-transparent bg-gradient-to-b from-white to-[#c0b9ff] lg:mt-32 mt-6">
+			<h1 className="md:mt-0 lg:text-4xl md:text-2xl md:font-extrabold bg-clip-text text-transparent bg-gradient-to-b from-white to-[#c0b9ff] lg:mt-32 mt-6 text-center">
 			{loading ? "Saving Your Information" : "This is the heading that will be displayed like this "}
 				</h1>
-				<div className="mt-16">
+				<div className="md:mt-16 mt-6">
 				<Button
 					duration={9000}
 					className="bg-white  dark:bg-black text-black dark:text-white border-neutral-200 dark:border-slate-800 md:text-xl "

@@ -13,8 +13,7 @@ const HeroSection = () => {
 						src="https://cdn.prod.website-files.com/63e6c1e86653498b2e3849c1/64946fe2d67f626674957ef4_GL%20Logo.svg"
 						alt="A descriptive alt text"
 						width={200}
-						height={300}
-					/>
+						height={300}/>
 				</div>
 
 				<h1 className="md:mt-0 lg:text-2xl md:text-2xl md:font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 lg:mt-12 mt-8">
