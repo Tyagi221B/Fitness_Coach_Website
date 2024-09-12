@@ -36,8 +36,10 @@ const UserInfoSection = () => {
 	}, [user]);
 
 	return (
-		<div className="flex flex-col items-center justify-center min-h-screen py-2 gap-6">
-			<h1>{loading ? "Processing" : "Send Your Info To Us"}</h1>
+		<div className="flex flex-col items-center justify-center h-full py-12 gap-6">
+			<h1 className="md:mt-0 lg:text-2xl md:text-2xl md:font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 lg:mt-12 mt-8">
+			{loading ? "Saving Your Information" : "Send Your Info To Us"}
+				</h1>
 			<hr />
 			<div className="flex flex-row gap-10">
 				<Input
@@ -65,7 +67,7 @@ const UserInfoSection = () => {
 					borderRadius="1.75rem"
 					className="bg-white  dark:bg-black text-black dark:text-yellow-300 border-neutral-200 dark:border-slate-800 md:text-xl"
 				>
-					{loading ? "...." : "Send"} -&gt;
+					{loading ? "...." : "Submit"} -&gt;
 				</Button>
 			</div>
 		</div>

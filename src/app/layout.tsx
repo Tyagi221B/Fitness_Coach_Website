@@ -23,7 +23,7 @@ export default function RootLayout({
 					<Navbar />
 				</div>
 				{children}
-				<Toaster position="top-right" reverseOrder={false}/>
+				<Toaster position="bottom-center" reverseOrder={false}/>
 			</body>
 		</html>
 	);

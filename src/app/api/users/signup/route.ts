@@ -29,7 +29,7 @@ export async function POST(request: NextRequest){
         console.log(savedUser);
 
         return NextResponse.json({
-            message: "User Info saved successfully",
+            message: "Your Email is saved successfully",
             success: true,
             savedUser
         })
