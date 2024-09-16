@@ -22,7 +22,7 @@ const HeroSection = () => {
 				<h1 className="md:mt-0 text-4xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-5  md:py-10 text-center ">
 					<TextGenerateEffect
 						words={words}
-						className="md:mt-0 text-[28px] md:text-6xl md:font-extrabold "
+						className="md:mt-0 text-[28px] md:text-6xl md:font-extrabold"
 					/>
 				</h1>
 
