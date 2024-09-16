@@ -4,6 +4,7 @@ import axios from "axios";
 import { toast } from "react-hot-toast";
 import { Button } from "./ui/moving-border";
 import { Input } from "./ui/input";
+import { Button2 } from "./ui/moving-border2";
 
 const UserInfoSection = () => {
 	const [user, setUser] = React.useState({
@@ -54,28 +55,28 @@ const UserInfoSection = () => {
 					placeholder="email"
 				/>
 				<Button
-					duration={1000}
+					duration={9000}
 					onClick={onSignup}
                     disabled={buttonDisabled || loading}
                     loading={loading}
-					borderClassName="bg-red-800 bg-yellow-400 bg-orange-400"
 					borderRadius="1.75rem"
-					className="bg-white  dark:bg-black text-black dark:text-yellow-300 border-neutral-200 dark:border-slate-800 lg:text-xl"
+					className="bg-white  dark:bg-black text-black dark:text-yellow-300 border-neutral-200 dark:border-slate-800 lg:text-xl dark:hover:bg-yellow-500 dark:hover:text-black cursor-pointer"
 				>
 					{loading ?  <span className="text-green-300 text-xs">Saving ...</span> : <span className="">Submit -&gt;</span>} 
 				</Button>
 			</div>
 
-			<h1 className="md:mt-0 lg:text-4xl md:text-2xl md:font-extrabold bg-clip-text text-transparent bg-gradient-to-b from-white to-[#c0b9ff] lg:mt-32 mt-6 text-center">
-			{loading ? "Saving Your Information" : "This is the heading that will be displayed like this "}
+			<h1 className="md:mt-0 lg:text-5xl md:text-3xl text-xl md:font-extrabold bg-clip-text text-transparent bg-gradient-to-b from-white to-[#c0b9ff] lg:mt-32 mt-6 text-center">
+			This is the heading that will be displayed like this.
 				</h1>
 				<div className="md:mt-16 mt-6">
-				<Button
-					duration={9000}
+				<Button2
+					duration={1000}
+					borderClassName="bg-red-800 bg-yellow-400 bg-orange-400"
 					className="bg-white  dark:bg-black text-black dark:text-white border-neutral-200 dark:border-slate-800 md:text-xl "
 				>
 					{loading ? "...." : "Button"}
-				</Button>
+				</Button2>
 
 				</div>
 				

@@ -2,7 +2,7 @@ const FirstVideo = () => {
 	return (
 		<div className="w-full flex flex-col justify-center items-center md:pt-12 py-5 rounded-full gap-8">
 			<div
-				className="relative flex justify-center md:w-[906px] md:h-[511px] w-80 h-60 "
+				className="relative flex justify-center md:w-[906px] md:h-[511px] w h-60 "
 				// style={{ width: "906px", height: "511px" }}
 			>
 				<iframe
