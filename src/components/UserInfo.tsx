@@ -40,8 +40,8 @@ const UserInfoSection = () => {
 	}, [user]);
 
 	return (
-		<div className="flex flex-col items-center justify-center h-full md:py-12 gap-6 mx-16 mt-6 mb-16">
-			<h1 className="md:mt-0 lg:text-2xl md:text-2xl md:font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 lg:mt-12 mt-8 text-center">
+		<div className="flex flex-col items-center justify-center h-full md:py-12 gap-6 m-4 mt-6 mb-16">
+			<h1 className="md:mt-0 lg:text-2xl md:text-2xl md:font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 lg:mt-12 mt-8 text-center px-6">
 			{loading ? "Saving Your Information" : "Send Your Info To Us, And We Will Connect To You Soon."}
 				</h1>
 			<hr />
@@ -66,16 +66,16 @@ const UserInfoSection = () => {
 				</Button>
 			</div>
 
-			<h1 className="md:mt-0 lg:text-5xl md:text-3xl text-xl md:font-extrabold bg-clip-text text-transparent bg-gradient-to-b from-white to-[#c0b9ff] lg:mt-32 mt-6 text-center">
+			<h1 className="md:mt-0 lg:text-5xl md:text-3xl text-xl md:font-extrabold bg-clip-text text-transparent bg-gradient-to-b from-white to-[#c0b9ff] lg:mt-32 mt-6 text-center px-2">
 			This is the heading that will be displayed like this.
 				</h1>
 				<div className="md:mt-16 mt-6">
 				<Button2
 					duration={1000}
 					borderClassName="bg-red-800 bg-yellow-400 bg-orange-400"
-					className="bg-white  dark:bg-black text-black dark:text-white border-neutral-200 dark:border-slate-800 md:text-xl "
+					className="bg-white  dark:bg-black text-black dark:text-white border-neutral-200 dark:border-slate-800 text-xl cursor:pointer  dark:hover:text-blue-200 md:text-2xl"
 				>
-					{loading ? "...." : "Button"}
+					Button
 				</Button2>
 
 				</div>
